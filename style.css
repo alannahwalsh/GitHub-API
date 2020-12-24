@@ -1,0 +1,116 @@
+
+body{
+    background-color: #a668ec;
+    font-family: "Arial", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid rgb(65, 63, 63);
+    float: middle;
+    width: 20%;
+    background: #494848;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    color: rgb(65, 62, 62);
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+input::placeholder {
+    color: rgb(107, 103, 103);
+}
+
+input:focus {
+    outline: none;
+}
+
+.info-card {
+    /* Add shadows to create the "card" effect */
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: auto;
+    margin-top:12rem;
+    width: 40%;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.user-avatar {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    margin-left: 2rem;
+}
+.user-info h2 {
+    margin-top: 0;
+}
+.user-info p {
+    margin-top: -20px;
+}
+.no-bio{
+    margin-bottom: 2rem;
+}
+
+.user-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+.user-info ul li strong {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.repo{
+    background-color: #e673bf;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.3rem .5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.repo:hover{
+    box-shadow: 0 5px 5px rgba(155, 155, 155, 0.25), 0 5px 5px rgba(119, 119, 119, 0.22);
+}
